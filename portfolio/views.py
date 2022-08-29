@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Project
 
 
-def home(request):
+def index(request):
     project = Project.objects.all()
 
-    return render(request, 'home.html', {'project': project})
+    return render(request, 'index.html', {'project': project})
